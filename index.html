@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Parking Lot</title>
+  </head>
+  <body>
+    <img class="logo" src="images/TORETTO.webp" alt="Toretto's licence plate">
+    <h1>Parking Lot Name</h1>
+    <div class="input-wrapper">
+      <input
+        type="text"
+        id="carName"
+        placeholder="Vehicle's name "
+        autocomplete="off"
+      />
+      <input
+        type="text"
+        id="carPlate"
+        placeholder="Vehicle's license plate "
+        autocomplete="off"
+      />
+      <button id="register" class="btn">Register</button>
+    </div>
+
+    <table class="occupancy">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Plate</th>
+          <th>Arrival time</th>
+          <th>Options</th>
+        </tr>
+      </thead>
+      <tbody id="parkingOccupancy"></tbody>
+    </table>
+    
+  </body>
+</html>
