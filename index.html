@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a47955b28c.js" crossorigin="anonymous" defer></script>
     <title>Parking Lot</title>
   </head>
   <body>
-    <img class="logo" src="images/TORETTO.webp" alt="Toretto's licence plate">
-    <h1>Parking Lot Name</h1>
+    <div class="logo-wrapper">
+      <i class="fa-solid fa-car logo"></i>
+      <h1>Parking Lot Name</h1>
+    </div>
     <div class="input-wrapper">
       <input
         type="text"
         id="carName"
-        placeholder="Vehicle's name "
+        placeholder="Vehicle's name"
         autocomplete="off"
       />
       <input
         type="text"
         id="carPlate"
-        placeholder="Vehicle's license plate "
+        placeholder="License plate"
         autocomplete="off"
       />
       <button id="register" class="btn">Register</button>
