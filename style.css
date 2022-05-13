@@ -26,18 +26,24 @@ body {
   flex-direction: column;
 }
 
+.logo-wrapper {
+  display: flex;
+  margin: 48px 0 32px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
 .logo {
-  width: 100px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  font-size: 32px;
+  color: var(--accent-purple);
 }
 
 h1 {
   text-align: center;
-  padding: 16px;
   font-weight: 700;
   font-size: x-large;
+  text-transform: uppercase;
 }
 
 .input-wrapper {
@@ -48,17 +54,64 @@ h1 {
   padding: 16px;
 }
 
+.input-wrapper > input, .btn {
+  padding: 8px;
+  border: var(--border-grey) 1px solid;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: var(--accent-purple) 1px solid;
+}
+
+.btn {
+  min-width: 100px;
+  background-color: var(--accent-purple);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .occupancy {
-  padding: 16px;
+  margin: 16px 0;
   text-align: center;
   align-self: center;
   table-layout: fixed;
   width: 75%;
   word-break: break-all;
-  border: 1px var(--accent-purple) solid; /*só pra ver, TODO: remover*/
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--text-dark-grey);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+tbody > tr {
+  color: var(--text-dark-grey);
 }
 
 td, th {
   padding: 8px;
-  border: 1px var(--text-dark-grey) solid; /*só pra ver, TODO: remover*/
+  border: 1px var(--border-grey) solid;
+}
+
+button.remove {
+  padding: 4px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+  color: var(--text-dark-grey);
+}
+
+button.remove:hover {
+  transform: scale(1.1);
+  color: var(--accent-purple);
+}
+
+button.remove:focus {
+  outline: none;
 }
