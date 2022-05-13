@@ -32,7 +32,7 @@ interface Ivehicle {
         <td>${vehicle.plate}</td>
         <td>${vehicle.arrival}</td>
         <td>
-          <button class="btn remove" data-plate="${vehicle.plate}">X</button>
+          <button class="remove" data-plate="${vehicle.plate}"><i class="fa-regular fa-trash-can"></i></button>
         </td>
       `;
 

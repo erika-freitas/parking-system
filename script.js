@@ -21,7 +21,7 @@
         <td>${vehicle.plate}</td>
         <td>${vehicle.arrival}</td>
         <td>
-          <button class="btn remove" data-plate="${vehicle.plate}">X</button>
+          <button class="remove" data-plate="${vehicle.plate}"><i class="fa-regular fa-trash-can"></i></button>
         </td>
       `;
             (_a = row.querySelector(".remove")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", function () {
@@ -54,7 +54,7 @@
         const name = (_a = $("#carName")) === null || _a === void 0 ? void 0 : _a.value;
         const plate = (_b = $("#carPlate")) === null || _b === void 0 ? void 0 : _b.value;
         if (!name || !plate) {
-            alert("Os campos nome e placa são obrigatórios");
+            alert("All fields are required");
             return;
         }
         parkingOccupancy().addCarInfo({ name, plate, arrival: new Date().toISOString() }, true);
