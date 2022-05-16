@@ -1,4 +1,4 @@
-# Sistema de Estacionamento
+# Parking Lot System
 
 ![Parking lot system](https://i.imgur.com/QpRVpbC.png)
 
