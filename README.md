@@ -1,6 +1,6 @@
 # Parking Lot System
 
-This was a guided project by DIO's instructor [Andre Soares](https://github.com/soaresderik)
+This is a guided project by DIO's instructor [Andre Soares](https://github.com/soaresderik)
 
 ### Running:
 To run this app you need to first compile TS file:
